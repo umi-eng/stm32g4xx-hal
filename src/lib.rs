@@ -98,3 +98,6 @@ pub mod time;
 pub mod timer;
 // pub mod watchdog;
 pub mod independent_watchdog;
+#[cfg(feature = "usb_hs")]
+#[cfg_attr(docsrs, doc(cfg(feature = "usb_hs")))]
+pub mod usb_hs;
